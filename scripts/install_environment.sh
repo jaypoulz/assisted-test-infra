@@ -34,7 +34,7 @@ function config_additional_modules() {
         echo "Enable EPEL for swtpm packages when on RHEL/CentOS based distributions"
         sudo dnf install -y \
             https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
-        dnf install podman -y
+        sudo dnf install podman -y
         ;;
 
     *)
